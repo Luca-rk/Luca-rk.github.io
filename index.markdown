@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Willkommen
+title: "Willkommen"
 ---
 
 <!-- Particles-Hintergrund -->
@@ -52,6 +52,7 @@ title: Willkommen
         <li class="fade-in"><strong>Kundenorientierung</strong>: Individuelle Lösungen nach Ihren spezifischen Anforderungen</li>
       </ul>
       
+      <p class="cta-button fade-in">
       <a href="/kontakt/" class="button scale-in">Kontaktieren Sie uns</a>
     </div>
   </div>

@@ -43,10 +43,10 @@ lang: de
 # SEO-Einstellungen
 keywords: Automatisierungstechnik, SPS-Programmierung, Prozessoptimierung, Industrie 4.0, IoT, Digitalisierung
 social:
-  name: Fusion fusionLogic
+  name: "Fusion fusionLogic"
   links:
     - https://www.linkedin.com/company/fusion-fusionlogic/
-    - https://www.xing.com/companies/fusion-fusionlogic
+    - https://www.xing.com/companies/fusion-fusionlogic/
 
 # Collections für Blog-Posts und Projekte
 collections:

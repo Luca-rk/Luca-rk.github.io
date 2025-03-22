@@ -1,15 +1,20 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    
+    <a class="site-title" href="{{ "/" | relative_url }}">
+      <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" height="40">
+      {{ site.title }}
+    </a>
     <nav class="site-nav">
-      <a class="page-link" href="/">Home</a>
-      <a class="page-link" href="/leistungen/">Leistungen</a>
-      <a class="page-link" href="/projekte/">Referenzprojekte</a>
-      <a class="page-link" href="/ueber-uns/">Über uns</a>
-      <a class="page-link" href="/blog/">Blog</a>
-      <a class="page-link" href="/faq/">FAQ</a>
-      <a class="page-link button" href="/kontakt/">Kontakt</a>
+      <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
+      <ul class="nav-links">
+        <li><a class="page-link{% if page.url == "/" %} current{% endif %}" href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a class="page-link{% if page.url == "/leistungen/" %} current{% endif %}" href="{{ "/leistungen/" | relative_url }}">Leistungen</a></li>
+        <li><a class="page-link{% if page.url == "/projekte/" %} current{% endif %}" href="{{ "/projekte/" | relative_url }}">Referenzprojekte</a></li>
+        <li><a class="page-link{% if page.url == "/ueber-uns/" %} current{% endif %}" href="{{ "/ueber-uns/" | relative_url }}">Über&nbsp;uns</a></li>
+        <li><a class="page-link{% if page.url == "/blog/" %} current{% endif %}" href="{{ "/blog/" | relative_url }}">Blog</a></li>
+        <li><a class="page-link{% if page.url == "/faq/" %} current{% endif %}" href="{{ "/faq/" | relative_url }}">FAQ</a></li>
+        <li><a class="page-link button{% if page.url == "/kontakt/" %} current{% endif %}" href="{{ "/kontakt/" | relative_url }}">Kontakt</a></li>
+      </ul>
     </nav>
   </div>
 </header>
